@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af8cf0e2-ecd5-48c0-a78c-b720bc819022" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hina/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/Buoi3/MinHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/Buoi3/MinHeap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -38,6 +37,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.ClosestPair.executor": "Run",
+    "Application.ComplexExpression.executor": "Run",
     "Application.IntervalPartitioning.executor": "Debug",
     "Application.IntervalScheduling.executor": "Run",
     "Application.Inversions.executor": "Run",
