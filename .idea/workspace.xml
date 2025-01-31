@@ -43,6 +43,8 @@
     "Application.Inversions.executor": "Run",
     "Application.MinHeap.executor": "Run",
     "Application.MinIndexPriorityQueue.executor": "Run",
+    "Application.TopM.executor": "Run",
+    "Application.Transaction.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true"
