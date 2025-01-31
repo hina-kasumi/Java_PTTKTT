@@ -55,7 +55,7 @@ public class MinHeap {
 
     public void remove(int x) {
         int curIndex = -1;
-        for (int i = 0; i < size; i++) {
+        for (int i = 1; i <= size; i++) {
             if (arr[i] == x) {
                 curIndex = i;
                 break;
