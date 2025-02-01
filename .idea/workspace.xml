@@ -43,6 +43,8 @@
     "Application.Inversions.executor": "Run",
     "Application.MinHeap.executor": "Run",
     "Application.MinIndexPriorityQueue.executor": "Run",
+    "Application.MinLateness.executor": "Run",
+    "Application.Student.executor": "Run",
     "Application.TopM.executor": "Run",
     "Application.Transaction.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
