@@ -38,6 +38,9 @@
   "keyToString": {
     "Application.ClosestPair.executor": "Run",
     "Application.ComplexExpression.executor": "Run",
+    "Application.DijkstraAll.executor": "Run",
+    "Application.DijkstraSD.executor": "Run",
+    "Application.DijkstraSP.executor": "Run",
     "Application.IntervalPartitioning.executor": "Debug",
     "Application.IntervalScheduling.executor": "Run",
     "Application.Inversions.executor": "Run",
@@ -56,6 +59,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\nguye\code\java\Java_PTTKTT\src\main\java\org\hina\Buoi2\Inversions" />
       <recent name="D:\nguye\code\java\Java_PTTKTT\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.hina.buoi4" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
