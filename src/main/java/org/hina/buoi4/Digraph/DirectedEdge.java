@@ -1,4 +1,4 @@
-package org.hina.buoi4.Graph;
+package org.hina.buoi4.Digraph;
 
 public class DirectedEdge {
     private final int tail;

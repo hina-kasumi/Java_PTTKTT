@@ -5,20 +5,20 @@ public class DisjointSetUnion {
     private int[] parent = new int[n];
     private int[] size = new int[n];
 
-    void makeSet (){
+    public void makeSet (){
         for (int i = 0; i < n; i++) {
             parent[i] = i;
             size[i] = 1;
         }
     }
 
-    int find(int x){
+    public int find(int x){
         if (x == parent[x])
             return x;
         return parent[x] = find(parent[x]);
     }
 
-    void union(int a, int b){
+    public void union(int a, int b){
         a = find(a);
         b = find(b);
         if (a != b){
@@ -35,6 +35,5 @@ public class DisjointSetUnion {
     public static void main(String[] args) {
         DisjointSetUnion dsu = new DisjointSetUnion();
         dsu.makeSet();
-
     }
 }

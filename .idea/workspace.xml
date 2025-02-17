@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="af8cf0e2-ecd5-48c0-a78c-b720bc819022" name="Changes" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/Buoi1/DisjointSetUnion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/Buoi1/DisjointSetUnion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/Dijkstra/DijkstraAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/Dijkstra/DijkstraAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/Dijkstra/DijkstraSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/Dijkstra/DijkstraSD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/Dijkstra/DijkstraSP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/Dijkstra/DijkstraSP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/Graph/DirectedEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/Digraph/DirectedEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/Graph/EdgeWeightedDigraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/Digraph/EdgeWeightedDigraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/Graph/ReverseEdgeWeightedDigraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/Digraph/ReverseEdgeWeightedDigraph.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +54,7 @@
     "Application.MinHeap.executor": "Run",
     "Application.MinIndexPriorityQueue.executor": "Run",
     "Application.MinLateness.executor": "Run",
+    "Application.Prim.executor": "Run",
     "Application.Student.executor": "Run",
     "Application.TopM.executor": "Run",
     "Application.Transaction.executor": "Run",

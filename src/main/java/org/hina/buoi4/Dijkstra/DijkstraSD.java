@@ -1,8 +1,8 @@
 package org.hina.buoi4.Dijkstra;
 
 import org.hina.Buoi3.IndexPriorityQueue.MinIndexPriorityQueue;
-import org.hina.buoi4.Graph.DirectedEdge;
-import org.hina.buoi4.Graph.ReverseEdgeWeightedDigraph;
+import org.hina.buoi4.Digraph.DirectedEdge;
+import org.hina.buoi4.Digraph.ReverseEdgeWeightedDigraph;
 
 import java.io.File;
 import java.util.ArrayList;

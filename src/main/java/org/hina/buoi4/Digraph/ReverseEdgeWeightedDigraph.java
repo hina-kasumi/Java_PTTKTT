@@ -1,21 +1,21 @@
-package org.hina.buoi4.Graph;
+package org.hina.buoi4.Digraph;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class EdgeWeightedDigraph {
+public class ReverseEdgeWeightedDigraph {
     private final int v; // số đỉnh
     private int e; // số cạnh
     private final List<DirectedEdge>[] adj; // danh sách kề của đỉnh
-    private final int[] inDegree;
+    private final int[] outDegree;
 
     // tạo một đồ thị có hướng thô
-    public EdgeWeightedDigraph(int v) {
+    public ReverseEdgeWeightedDigraph(int v) {
         this.v = v;
         this.e = 0;
-        this.inDegree = new int[v];
+        this.outDegree = new int[v];
         adj = new List[v];
         for (int i = 0; i < v; i++) {
             adj[i] = new ArrayList<>();
@@ -23,11 +23,11 @@ public class EdgeWeightedDigraph {
     }
 
     // tạo một đồ thị có hướng từ một đồ thị có sẵn
-    public EdgeWeightedDigraph(EdgeWeightedDigraph graph) {
+    public ReverseEdgeWeightedDigraph(ReverseEdgeWeightedDigraph graph) {
         this(graph.getV());
         this.e = graph.e;
         for (int i = 0; i < graph.v; i++) {
-            this.inDegree[i] = graph.getInDegree(v);
+            this.outDegree[i] = graph.getOutDegree(v);
         }
         for (int i = 0; i < graph.v; i++) {
             Stack<DirectedEdge> reverse = new Stack<>();
@@ -38,7 +38,7 @@ public class EdgeWeightedDigraph {
         }
     }
 
-    public EdgeWeightedDigraph(Scanner scanner) {
+    public ReverseEdgeWeightedDigraph(Scanner scanner) {
         this(scanner.nextInt());
         int e = scanner.nextInt();
 
@@ -65,9 +65,9 @@ public class EdgeWeightedDigraph {
         return e;
     }
 
-    public int getInDegree(int v) {
+    public int getOutDegree(int v) {
         validateVertex(v);
-        return inDegree[v];
+        return outDegree[v];
     }
 
     public void addEdge(DirectedEdge edge) {
@@ -75,19 +75,19 @@ public class EdgeWeightedDigraph {
         int to = edge.to();
         validateVertex(from);
         validateVertex(to);
-        adj[from].add(edge); // thêm vào danh sách của đỉnh nguồn
-        inDegree[to]++; //tăng thêm một bậc cho đỉnh nguồn
+        adj[to].add(edge); // thêm vào danh sách của đỉnh nguồn
+        outDegree[from]++; //tăng thêm một bậc cho đỉnh nguồn
         this.e++; // tăng thêm 1 cạnh
     }
 
     // lấy danh sách cạnh từ một đỉnh
-    public List<DirectedEdge> adj(int from) {
-        validateVertex(from);
-        return adj[from];
+    public List<DirectedEdge> adj(int to) {
+        validateVertex(to);
+        return adj[to];
     }
 
     // lấy số lượng cạnh đi ra từ một đỉnh
-    public int outDegree(int from) {
+    public int inDegree(int from) {
         validateVertex(from);
         return adj[from].size();
     }
