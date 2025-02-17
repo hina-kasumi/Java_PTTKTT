@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 public class Kruskal {
     private double weight;                        // tổng trọng số của cây khung
-    private Queue<Edge> mst = new LinkedList<>();  // các cạnh trong cây khung
+    private final Queue<Edge> mst = new LinkedList<>();  // các cạnh trong cây khung
 
     public Kruskal(EdgeWeightedGraph graph) {
         // create array of edges, sorted by weight
@@ -24,7 +24,7 @@ public class Kruskal {
         }
         Arrays.sort(edges);
 
-        DisjointSetUnion union = new DisjointSetUnion();
+        DisjointSetUnion union = new DisjointSetUnion(graph.getV());
         for (int i = 0; i < graph.getE() && mst.size() < graph.getV() - 1; i++) {
             Edge edge = edges[i];
             int v = edge.either();

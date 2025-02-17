@@ -1,39 +1,44 @@
 package org.hina.Buoi1;
 
 public class DisjointSetUnion {
-    private final int n =(int) 100;
-    private int[] parent = new int[n];
-    private int[] size = new int[n];
+    private int[] parent; //parent[i] = cha của i
+    private int count; // số lượng thành phần
 
-    public void makeSet (){
+    public DisjointSetUnion(int n) {
+        parent = new int[n];
+        count = n;
         for (int i = 0; i < n; i++) {
             parent[i] = i;
-            size[i] = 1;
         }
     }
 
-    public int find(int x){
-        if (x == parent[x])
-            return x;
-        return parent[x] = find(parent[x]);
+    public int getCount() {
+        return count;
     }
 
-    public void union(int a, int b){
-        a = find(a);
-        b = find(b);
-        if (a != b){
-            if (size[a] < size[b]){
-                var temp = a;
-                a = b;
-                b = temp;
-            }
-            parent[b] = a;
-            size[a] += size[b];
+    public int find(int p) {
+        validate(p);
+        while (p != parent[p])
+            p = parent[p];
+        return p;
+    }
+
+    private void validate(int p) {
+        int n = parent.length;
+        if (p < 0 || p >= n) {
+            throw new IllegalArgumentException("index " + p + " is not between 0 and " + (n - 1));
         }
     }
 
-    public static void main(String[] args) {
-        DisjointSetUnion dsu = new DisjointSetUnion();
-        dsu.makeSet();
+    public boolean connected(int p, int q) {
+        return find(p) == find(q);
+    }
+
+    public void union(int p, int q) {
+        int rootP = find(p);
+        int rootQ = find(q);
+        if (rootP == rootQ) return;
+        parent[rootP] = rootQ;
+        count--;
     }
 }

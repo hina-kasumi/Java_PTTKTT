@@ -94,6 +94,15 @@ public class DijkstraAll {
         EdgeWeightedDigraph digraph = new EdgeWeightedDigraph(scanner);
 
         DijkstraAll dijkstraAll = new DijkstraAll(digraph);
-        dijkstraAll.pathTo(0, 4).forEach(System.out::println);
+        for (int i = 0; i < digraph.getV(); i++) {
+            for (int j = 0; j < digraph.getV(); j++) {
+                if (!dijkstraAll.hasPathTo(i, j))
+                    System.out.println("không có đường đi từ " + i + " đến " + j);
+                dijkstraAll.pathTo(i, j).forEach(System.out::println);
+                System.out.println("----------");
+            }
+        }
+
+        scanner.close();
     }
 }
