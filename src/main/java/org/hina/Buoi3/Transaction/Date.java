@@ -7,7 +7,7 @@ public class Date implements Comparable<Date> {
     private final int day;     // day   (between 1 and DAYS[month]
     private final int year;    // year
 
-    public Date(int month, int day, int year) {
+    public Date(int day, int month, int year) {
         if (!isValid(month, day, year)) throw new IllegalArgumentException("Invalid date");
         this.month = month;
         this.day = day;
@@ -19,8 +19,8 @@ public class Date implements Comparable<Date> {
         if (fields.length != 3) {
             throw new IllegalArgumentException("Invalid date");
         }
-        month = Integer.parseInt(fields[0]);
-        day = Integer.parseInt(fields[1]);
+        month = Integer.parseInt(fields[1]);
+        day = Integer.parseInt(fields[0]);
         year = Integer.parseInt(fields[2]);
         if (!isValid(month, day, year)) throw new IllegalArgumentException("Invalid date");
     }

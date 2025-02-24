@@ -2,12 +2,8 @@ package org.hina.buoi5.Movies;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-
-import org.hina.buoi5.RedBlackBST;
 
 public class Movies {
     private final PeopleST peopleST;
@@ -17,7 +13,7 @@ public class Movies {
         peopleST = new PeopleST();
         moviesST = new MoviesST();
         try (Scanner scanner = new Scanner(new File("src/main/java/org/hina/buoi5/Movies/movies.txt"))) {
-            while (scanner.hasNext()) {
+            while (scanner.hasNextLine()) {
                 String[] strings = scanner.nextLine().split("/");
                 moviesST.add(strings);
                 peopleST.add(strings);
