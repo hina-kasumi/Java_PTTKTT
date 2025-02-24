@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="af8cf0e2-ecd5-48c0-a78c-b720bc819022" name="Changes" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/Buoi1/DisjointSetUnion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/Buoi1/DisjointSetUnion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/Dijkstra/DijkstraAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/Dijkstra/DijkstraAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/MinimumSpanningTrees/Kruskal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/MinimumSpanningTrees/Kruskal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/Digraph/ReverseEdgeWeightedDigraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/Digraph/ReverseEdgeWeightedDigraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/Graph/EdgeWeightedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/buoi4/Graph/EdgeWeightedGraph.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +51,7 @@
     &quot;Application.MinHeap.executor&quot;: &quot;Run&quot;,
     &quot;Application.MinIndexPriorityQueue.executor&quot;: &quot;Run&quot;,
     &quot;Application.MinLateness.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Movies.executor&quot;: &quot;Run&quot;,
     &quot;Application.Prim.executor&quot;: &quot;Run&quot;,
     &quot;Application.Student.executor&quot;: &quot;Run&quot;,
     &quot;Application.TopM.executor&quot;: &quot;Run&quot;,

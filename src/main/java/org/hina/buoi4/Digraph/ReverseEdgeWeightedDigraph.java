@@ -45,7 +45,7 @@ public class ReverseEdgeWeightedDigraph {
         for (int i = 0; i < e; i++) {
             int from = scanner.nextInt();
             int to = scanner.nextInt();
-            int w = scanner.nextInt();
+            double w = scanner.nextDouble();
             validateVertex(from);
             validateVertex(to);
             addEdge(new DirectedEdge(to, from, w));
