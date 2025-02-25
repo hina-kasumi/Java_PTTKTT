@@ -2,10 +2,10 @@ package org.hina.buoi5.Student;
 
 import org.hina.buoi5.RedBlackBST;
 
-public class StudentManaget {
+public class StudentManager {
     private RedBlackBST<String, Student> studentManager;
 
-    public StudentManaget() {
+    public StudentManager() {
         this.studentManager = new RedBlackBST<>();
     }
 

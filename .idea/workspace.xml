@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af8cf0e2-ecd5-48c0-a78c-b720bc819022" name="Changes" comment="first commit" />
+    <list default="true" id="af8cf0e2-ecd5-48c0-a78c-b720bc819022" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/buoi5/Student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/buoi5/Student/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/buoi5/Student/StudentManaget.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hina/buoi5/Student/StudentSolve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hina/buoi5/Student/StudentSolve.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
