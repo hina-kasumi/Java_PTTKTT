@@ -1,13 +1,17 @@
 package org.hina.buoi5.Student;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class StudentSolve {
     private StudentManager studentManaget;
+    private List<BangDiem> list;
 
     public StudentSolve() {
         this.studentManaget = new StudentManager();
+        list = new ArrayList<>();
 
         try (Scanner scanner = new Scanner(new File("src/main/java/org/hina/buoi5/Student/sv.csv"))) {
             while (scanner.hasNextLine()) {
@@ -15,6 +19,13 @@ public class StudentSolve {
             }
         } catch (Exception e) {
             e.printStackTrace();
+        }
+
+        list.add(new BangDiem("src/main/java/org/hina/buoi5/Student/toan3.csv"));
+        list.add(new BangDiem("src/main/java/org/hina/buoi5/Student/hoa2.csv"));
+
+        for (BangDiem bangDiem : list) {
+            bangDiem.addDiem(studentManaget);
         }
     }
 
@@ -24,9 +35,7 @@ public class StudentSolve {
 
     public static void main(String[] args) {
         StudentSolve solve = new StudentSolve();
-        solve.getStudent("123").addDiem(new Mon("toan", 1), 3);
-        solve.getStudent("123").addDiem(new Mon("hoa", 3), 6);
-        solve.getStudent("123").addDiem(new Mon("van", 2), 4);
-        System.out.println(solve.getStudent("123").diemTBC());
+        
+        System.out.println(solve.getStudent("123456").diemTBC());
     }
 }

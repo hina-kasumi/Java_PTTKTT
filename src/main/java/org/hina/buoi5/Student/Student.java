@@ -47,6 +47,10 @@ public class Student {
         return res / soMon;
     }
 
+    public RedBlackBST<Mon, Float> getDiem() {
+        return bangDiem;
+    }
+
     public String getMsv() {
         return msv;
     }

@@ -20,4 +20,8 @@ public class StudentManager {
     public Student getStudent(String msv) {
         return studentManager.get(msv);
     }
+
+    public RedBlackBST<String, Student> getStudentManager() {
+        return studentManager;
+    }
 }
